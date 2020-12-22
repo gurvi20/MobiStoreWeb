@@ -1,0 +1,32 @@
+<h2 class="page-header">Edit Product</h2>
+<form (submit)="onEditProductSubmit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" [(ngModel)]="name" name="name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Image Source</label>
+    <input type="text" [(ngModel)]="img" name="img" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Colors Available</label>
+    <input type="text" [(ngModel)]="colors" name="colors" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="rating">Rating</label>
+    <input [(ngModel)]="rating" class="form-control" type="text" name="rating" />
+  </div>
+  <div class="form-group">
+    <label>Brand Name</label>
+    <input type="text" [(ngModel)]="brand" name="brand" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="features">Features</label>
+    <input [(ngModel)]="features" class="form-control" type="text" name="features" />
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input [(ngModel)]="price" class="form-control" type="number" name="price" />
+  </div>
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>
